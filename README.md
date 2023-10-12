@@ -1,6 +1,6 @@
 # viacep_flutter
 
-Desafio do [web.dio.me](https://web.dio.me) de criar uma aplicação em flutter para exibição e gerenciamento de CEPs utilizando a plataforma Back4App.
+Desafio do [web.dio.me](https://web.dio.me) de criar uma aplicação em flutter para exibição e gerenciamento de CEPs utilizando a plataforma Back4App e a API pública ViaCEP.
 
 ## Checklist do Desafio
 
