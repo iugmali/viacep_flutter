@@ -6,5 +6,5 @@ Desafio do [web.dio.me](https://web.dio.me) de criar uma aplicação em flutter 
 
 - [x] Criar uma aplicação Flutter
 - [x] Criar uma classe de CEP no Back4App
-- [] Consulte um Cep no ViaCep, após retornado se não existir no Back4App, realizar o cadastro
-- [] Listar os CEPs cadastrados em forma de lista, possibilitando a alteração e exclusão do CEP
+- [ ] Consulte um Cep no ViaCep, após retornado se não existir no Back4App, realizar o cadastro
+- [ ] Listar os CEPs cadastrados em forma de lista, possibilitando a alteração e exclusão do CEP
