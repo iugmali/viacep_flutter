@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:viacep_flutter/pages/main_page.dart';
 
-void main() {
+GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
@@ -11,12 +19,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      builder: FToastBuilder(),
+      navigatorKey: navigatorKey,
+      debugShowCheckedModeBanner: false,
+      title: 'ViaCEP Flutter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+          primarySwatch: Colors.teal,
+          textTheme: GoogleFonts.robotoTextTheme()
       ),
-      home: const Placeholder(),
+      home: const MainPage(),
     );
   }
 }
